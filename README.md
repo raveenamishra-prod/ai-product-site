@@ -1,21 +1,24 @@
 # ai-product-site
 
-
 ## API Test (Hoppscotch) — GET + JSON Interpretation
 
 **Tool:** Hoppscotch (REST)  
 **Method:** GET  
 **Endpoint tested:** https://api.github.com/repos/raveenamishra-prod/ai-product-site  
-**Expected result:** 200 OK + JSON response
+**Result:** 200 OK (JSON response)
+
+### Screenshots
+- screenshots/hoppscotch-200.png (Request + 200 OK)
+- screenshots/hoppscotch-json.png (JSON response)
 
 ### Key JSON Fields (Interpretation)
-- **full_name:** The repository identifier in `owner/repo` format.
-- **html_url:** The public GitHub link to open the repository in a browser.
-- **description:** A short description of the repository (if set).
-- **created_at:** When the repository was created.
-- **updated_at:** When it was last updated.
-- **default_branch:** The branch GitHub treats as the main branch (usually `main`).
-- **homepage:** If GitHub Pages is configured, this may contain the live website URL.
-- **stargazers_count:** Stars the repo has received (popularity signal).
-- **forks_count:** Number of times the repo has been forked.
-- **open_issues_count:** Number of currently open issues.
+- **id (1131125808):** GitHub’s internal numeric ID for this repository.
+- **node_id (R_kgDOQ2ucMA):** Global identifier used by GitHub’s GraphQL system.
+- **name (ai-product-site):** Repository name.
+- **full_name (raveenamishra-prod/ai-product-site):** Unique repo identifier = owner + repo name.
+- **private (false):** Repository visibility status (public repo).
+- **owner.login (raveenamishra-prod):** Username that owns the repository.
+- **html_url:** Browser link to view the repo on GitHub.
+- **description (null):** Repo description is not set yet.
+- **fork (false):** Repo is not a fork; it was created originally.
+- **url:** API endpoint for this repo (used for programmatic access).
