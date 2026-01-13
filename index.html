@@ -140,6 +140,13 @@
       100%{ transform: translateX(45%) rotate(10deg); }
     }
 
+    .logo-image {
+  height: 60px;        /* adjust size */
+  width: auto;
+  cursor: pointer;
+}
+
+
     .logo-text{
       background: var(--primary-gradient);
       -webkit-background-clip: text;
@@ -744,10 +751,15 @@
 <body>
   <nav>
     <div class="container nav-container">
-      <div class="logo reveal">
+      <!-- <div class="logo reveal">
         <div class="logo-badge">P</div>
         <div class="logo-text">ParkHive</div>
+      </div> -->
+
+      <div class="logo">
+        <img src="assets/logo.png" alt="Park Hive Logo" class="logo-image">
       </div>
+
 
       <ul class="nav-menu reveal" id="navMenu">
         <li><a href="#users">For Users</a></li>
